@@ -5,11 +5,13 @@
     <title>Title</title>
 </head>
 <body>
+
 <a href="/add">Add a Todo</a><br/>
 <div th:each="todo : ${todos}">
-    <h4 th:inline="text">[[${todo.name}]] @ [[${todo.duedate}]] @ [[{todo.item}]]</h4>
-    <p th:number="${todo.id}"></p>
-
+       ID:     <h4 th:text="${todo.id}"></h4> //play around with this line, can make it look like the lines below but it shows up as double sets of answers
+       Name:     [[${todo.name}]]<br/>
+       Due Date: [[${todo.duedate}]]<br/>
+       To-do Item: [[${todo.items}]]<br/>
 </div>
 </body>
 </html>
