@@ -15,14 +15,14 @@ public class TODO {
     private long id;
 
     @NotNull
-    @Size(min=2)
+    @Size(min=1)
     private String name;
 
     @NotNull
     private String duedate;
 
     @NotNull
-    @Size(min=5)
+    @Size(min=1)
     private String items;
 
 

@@ -8,10 +8,11 @@
 
 <a href="/add">Add a Todo</a><br/>
 <div th:each="todo : ${todos}">
-       ID:     <h4 th:text="${todo.id}"></h4> //play around with this line, can make it look like the lines below but it shows up as double sets of answers
+    <!--Play around with this line, can make it look like the lines below but it shows up as double sets of answers-->
+       ID:     <span th:text="${todo.id}"></span><br/>
        Name:     [[${todo.name}]]<br/>
        Due Date: [[${todo.duedate}]]<br/>
-       To-do Item: [[${todo.items}]]<br/>
+       To-do Item: [[${todo.items}]]<br/><br/>
 </div>
 </body>
 </html>
